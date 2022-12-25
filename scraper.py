@@ -12,9 +12,9 @@ time.sleep(5)
 
 ActionChains(driver).move_by_offset(100,100).click().perform() #關閉彈跳視窗
 
-#cards = driver.find_elements(By.CSS_SELECTOR, "div[class='UpbuCz']")
+cards = driver.find_elements(By.CSS_SELECTOR, "div[class='col-xs-2 recommend-products-by-view__item-card-wrapper']")
 
-cards = driver.find_elements(By.TAG_NAME, "div")
+#cards = driver.find_elements(By.TAG_NAME, "div")
 print(cards)
 
 items = []
